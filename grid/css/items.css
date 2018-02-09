@@ -1,0 +1,22 @@
+.grid-container{
+    display: grid;
+    grid-auto-rows: 60px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 4px;
+}
+
+.grid-item{
+    background: steelblue;
+    color: #cccccc;
+    /* grid-row-start: 5; */
+}
+
+.grid-item:last-child{
+    /* grid-row-start: 3;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 7; */
+    /* grid-column: span 3;
+    grid-row: span 4; */
+    grid-area: 1 / 1 / span 2 / 4;
+}
